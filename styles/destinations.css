@@ -1,0 +1,38 @@
+main {
+  max-width: 40rem;
+}
+main h1 {
+  font-weight: 300;
+  color: rgba(51, 47, 47, 0.8);
+}
+
+#destinations-list {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.destination-item {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  background-color: rgb(250, 233, 194);
+  color: rgb(110, 78, 7);
+  text-align: left;
+}
+
+.destination-item h2 {
+  font-family: "Roboto Condensed", "Roboto", sans-serif;
+  font-size: 1.25rem;
+  margin: 0.25rem 0;
+  color: rgb(115, 169, 173);
+}
+
+.destination-item p {
+  margin: 0.2rem 0;
+  color: rgb(110, 78, 7);
+}
+.destination-data {
+  margin-bottom: 0.5rem;
+}

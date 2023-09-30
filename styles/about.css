@@ -1,0 +1,37 @@
+#about {
+  width: 90%;
+  max-width: 80rem;
+}
+#about h1 {
+  font-weight: 300;
+  color: rgba(51, 47, 47, 0.8);
+}
+#about h3 {
+  margin-top: 4rem;
+  color: rgb(115, 169, 173);
+  font-weight: 300;
+}
+#about ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+#about ul li {
+  width: 100;
+}
+#about span {
+  color: rgb(115, 169, 173);
+}
+#catcher {
+  margin: 0 1rem;
+  color: rgb(250, 233, 194);
+  background-color: rgba(51, 47, 47, 0.8);
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+#catcher a {
+  text-decoration: none;
+}
