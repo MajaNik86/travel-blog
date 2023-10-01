@@ -14,38 +14,7 @@
     <script src="/responsive.js" defer></script>
   </head>
   <body>
-    <header id="main-header">
-      <div id="logo"><a href="/">Travel Goals</a></div>
-      <nav>
-        <ul>
-          <li class="nav-item">
-            <a href="/destinations">Browse Destinations</a>
-          </li>
-          <li class="nav-item">
-            <a href="/recommend">Add new destination</a>
-          </li>
-          <li class="nav-item"><a href="/about">About</a></li>
-        </ul>
-      </nav>
-      <button id="burger-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </header>
-    <aside id="mobile-nav">
-      <nav>
-        <ul>
-          <li class="nav-item">
-            <a href="/destinations">Browse Destinations</a>
-          </li>
-          <li class="nav-item">
-            <a href="/recommend">Add new destination</a>
-          </li>
-          <li class="nav-item"><a href="/about">About</a></li>
-        </ul>
-      </nav>
-    </aside>
+    <%-include('includes/header')%> <%-include('includes/aside')%>
     <main>
       <h1>Success!</h1>
       <p>Your destination was successfully added to our list!</p>

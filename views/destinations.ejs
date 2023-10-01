@@ -12,38 +12,7 @@
     <title>Destinations</title>
   </head>
   <body>
-    <header id="main-header">
-      <div id="logo"><a href="/">Travel Goals</a></div>
-      <nav>
-        <ul>
-          <li class="nav-item">
-            <a href="/destinations">Browse Destinations</a>
-          </li>
-          <li class="nav-item">
-            <a href="/recommend">Add new destination</a>
-          </li>
-          <li class="nav-item"><a href="/about">About</a></li>
-        </ul>
-      </nav>
-      <button id="burger-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </header>
-    <aside id="mobile-nav">
-      <nav>
-        <ul>
-          <li class="nav-item">
-            <a href="/destinations">Browse Destinations</a>
-          </li>
-          <li class="nav-item">
-            <a href="/recommend">Add new destination</a>
-          </li>
-          <li class="nav-item"><a href="/about">About</a></li>
-        </ul>
-      </nav>
-    </aside>
+    <%-include('includes/header')%> <%-include('includes/aside')%>
     <main>
       <% if (numOfDestinations===0){%>
       <p>
@@ -55,16 +24,7 @@
       <p>There are <%=numOfDestinations%> destinations</p>
       <ul id="destinations-list">
         <% for(const destination of destinations){%>
-        <li class="destination-item">
-          <article>
-            <h2><%=destination.name%></h2>
-            <div class="destination-data">
-              <p><%=destination.coutry%></p>
-            </div>
-            <p><%=destination.sights%></p>
-            <p><%=destination.description%></p>
-          </article>
-        </li>
+        <%-include('includes/destinations/destination-item',{destination:destination})%>
         <%}%>
       </ul>
       <%}%>
