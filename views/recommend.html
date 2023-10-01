@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/recommend.css" />
     <title>Recommend a destination</title>
   </head>
   <body>
@@ -40,7 +41,31 @@
       </nav>
     </aside>
     <main>
-      <h1>PLease recommend a place to visit</h1>
+      <h1>Please recommend a place to visit</h1>
+      <form action="/recommend" method="POST">
+        <div class="form-control">
+          <label for="name">Place:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-control">
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country" required />
+        </div>
+        <div class="form-control">
+          <label for="sights">Things to see:</label>
+          <textarea name="sights" id="sights" rows="10" required></textarea>
+        </div>
+        <div class="form-control">
+          <label for="description">Why do you recommend it?</label>
+          <textarea
+            name="description"
+            id="description"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <button>Share Destination</button>
+      </form>
     </main>
     <script src="script.js"></script>
   </body>
