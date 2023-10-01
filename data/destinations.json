@@ -1,14 +1,1 @@
-[
-  {
-    "name": "Novi Sad",
-    "country": "Serbia",
-    "sights": "petrovaradin fortress",
-    "description": "lovely people, nice food"
-  },
-  {
-    "name": "test",
-    "country": "test ",
-    "sights": "dfdvdf vdvdfvdf vdfvdv",
-    "description": "dsfsfsf sfsdfsdfssfssdfdf"
-  }
-]
+[{"id":"d1","name":"Novi Sad","country":"Serbia","sights":"petrovaradin fortress","description":"lovely people, nice food"},{"id":"d2","name":"test","country":"test ","sights":"dfdvdf vdvdfvdf vdfvdv","description":"dsfsfsf sfsdfsdfssfssdfdf"},{"name":"Wes Bos","country":"Serbia","sights":"kjn;klnj ;adkljnval;kvm as;dlvkasnv","description":"aksjdna;lkndcaf","id":"b79cdb0e-65ab-4d1c-980a-fc42af4cca97"}]

@@ -36,3 +36,26 @@ main h1 {
 .destination-data {
   margin-bottom: 0.5rem;
 }
+
+.destination-actions {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.destination-actions a,
+.btn {
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(224, 214, 191);
+  border-radius: 4px;
+  color: rgb(115, 169, 173);
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.destination-actions a:hover,
+.destination-actions a:active,
+.btn {
+  background-color: rgb(115, 169, 173);
+  color: rgb(224, 214, 191);
+}

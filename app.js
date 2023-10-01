@@ -1,4 +1,5 @@
 const express = require("express");
+const uuid = require('uuid');
 const fs = require("fs");
 
 const path = require("path");
@@ -27,13 +28,30 @@ app.get("/destinations", function (req, res) {
     });
 });
 
+app.get("/destinations/:id", function (req, res) {
+    const destinationId = req.params.id;
+    const filePath = path.join(__dirname, "data", "destinations.json");
+
+    const fileData = fs.readFileSync(filePath);
+    const storedDestinations = JSON.parse(fileData);
+    for (const destination of storedDestinations) {
+        if (destination.id === destinationId) {
+            return res.render('destination-detail', { destination: destination })
+        }
+    }
+
+
+
+})
+
 app.get("/recommend", function (req, res) {
-    const htmlFilePath = path.join(__dirname, "views", "recommend.html");
     res.render("recommend");
 });
 
 app.post("/recommend", function (req, res) {
     const destination = req.body;
+    destination.id = uuid.v4();
+
     const filePath = path.join(__dirname, "data", "destinations.json");
 
     const fileData = fs.readFileSync(filePath);
@@ -49,5 +67,6 @@ app.get("/confirm", function (req, res) {
 app.get("/about", function (req, res) {
     res.render("about");
 });
+
 
 app.listen(3000);
