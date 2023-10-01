@@ -45,42 +45,29 @@
       </nav>
     </aside>
     <main>
+      <% if (numOfDestinations===0){%>
+      <p>
+        Unfortunately, we have no destinations yet - maybe start recommending
+        some?
+      </p>
+      <% } else { %>
       <h1>Best destinations to visit:</h1>
+      <p>There are <%=numOfDestinations%> destinations</p>
       <ul id="destinations-list">
+        <% for(const destination of destinations){%>
         <li class="destination-item">
           <article>
-            <h2>City</h2>
+            <h2><%=destination.name%></h2>
             <div class="destination-data">
-              <p>Country</p>
+              <p><%=destination.coutry%></p>
             </div>
-            <p>
-              A short description, explaining why this destination is supreme!
-            </p>
+            <p><%=destination.sights%></p>
+            <p><%=destination.description%></p>
           </article>
         </li>
-        <li class="destination-item">
-          <article>
-            <h2>City</h2>
-            <div class="destination-data">
-              <p>Country</p>
-            </div>
-            <p>
-              A short description, explaining why this destination is supreme!
-            </p>
-          </article>
-        </li>
-        <li class="destination-item">
-          <article>
-            <h2>City</h2>
-            <div class="destination-data">
-              <p>Country</p>
-            </div>
-            <p>
-              A short description, explaining why this destination is supreme!
-            </p>
-          </article>
-        </li>
+        <%}%>
       </ul>
+      <%}%>
     </main>
     <script src="script.js"></script>
   </body>
