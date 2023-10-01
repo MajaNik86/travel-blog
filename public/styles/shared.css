@@ -12,15 +12,6 @@ main {
   text-align: center;
 }
 
-main h1 {
-  font-family: "Roboto", sans-serif;
-  color: rgb(115, 169, 173);
-}
-
-main p {
-  color: rgb(95, 83, 58);
-}
-
 #main-header {
   width: 100%;
   height: 5rem;
@@ -123,7 +114,14 @@ main p {
 #mobile-nav .nav-item a:active {
   color: rgb(224, 214, 191);
 }
+main h1 {
+  font-family: "Roboto", sans-serif;
+  color: rgb(115, 169, 173);
+}
 
+main p {
+  color: rgb(95, 83, 58);
+}
 @media (min-width: 60rem) {
   #main-header {
     padding: 0 5%;
